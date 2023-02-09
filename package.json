@@ -1,0 +1,14 @@
+{
+  "name": "html-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Website ",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass app.scss app.css --watch --no-source-map --style compressed"
+  },
+  "author": "Arif Tonoy",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}

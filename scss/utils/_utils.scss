@@ -1,0 +1,28 @@
+@use "../abstract" as *;
+
+.heading {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: $black;
+    position: relative;
+    @include responsive(xsm) {
+        font-size: 1.8rem;
+    }
+    &::after {
+        @include position(absolute, 50%, null, null, 0);
+        content: "";
+        width: 10rem;
+        height: .5rem;
+     //   background: $green-500;
+        opacity: .4rem;
+    }
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.items-center {
+    align-items: center;
+}
